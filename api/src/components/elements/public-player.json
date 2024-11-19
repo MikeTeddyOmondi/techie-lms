@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_public_players",
+  "info": {
+    "displayName": "Public Player",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "videoId": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "timecode": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

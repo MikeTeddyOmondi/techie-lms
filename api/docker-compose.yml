@@ -1,0 +1,15 @@
+services:
+  projecthive:
+    image: postgres:latest
+    container_name: pauls-lms
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_DB: strapi
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+    volumes:
+      - pauls-lms_db:/var/lib/postgresql/data
+
+volumes:
+  pauls-lms_db:
