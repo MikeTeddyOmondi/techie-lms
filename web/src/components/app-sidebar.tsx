@@ -38,30 +38,30 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Techie LMS",
       logo: GalleryVerticalEnd,
-      plan: "Enterprise",
+      plan: "Student",
     },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
-    },
+    // {
+    //   name: "Acme Corp.",
+    //   logo: AudioWaveform,
+    //   plan: "Startup",
+    // },
+    // {
+    //   name: "Evil Corp.",
+    //   logo: Command,
+    //   plan: "Free",
+    // },
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Courses",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "History",
+          title: "All",
           url: "#",
         },
         {
@@ -69,74 +69,74 @@ const data = {
           url: "#",
         },
         {
-          title: "Settings",
+          title: "Preferences",
           url: "#",
         },
       ],
     },
     {
-      title: "Models",
+      title: "Billing",
       url: "#",
       icon: Bot,
       items: [
         {
-          title: "Genesis",
+          title: "Manage Subscriptions",
           url: "#",
         },
         {
-          title: "Explorer",
+          title: "Address",
           url: "#",
         },
-        {
-          title: "Quantum",
-          url: "#",
-        },
+        // {
+        //   title: "Quantum",
+        //   url: "#",
+        // },
       ],
     },
-    {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
-    },
+    // {
+    //   title: "Documentation",
+    //   url: "#",
+    //   icon: BookOpen,
+    //   items: [
+    //     {
+    //       title: "Introduction",
+    //       url: "#",
+    //     },
+    //     {
+    //       title: "Get Started",
+    //       url: "#",
+    //     },
+    //     {
+    //       title: "Tutorials",
+    //       url: "#",
+    //     },
+    //     {
+    //       title: "Changelog",
+    //       url: "#",
+    //     },
+    //   ],
+    // },
     {
       title: "Settings",
       url: "#",
       icon: Settings2,
       items: [
         {
-          title: "General",
+          title: "Preferences",
           url: "#",
         },
         {
-          title: "Team",
+          title: "Account",
           url: "#",
         },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
+        // {
+        //   title: "Billing",
+        //   url: "#",
+        // },
+        // {
+        //   title: "Limits",
+        //   url: "#",
+        // },
       ],
     },
   ],
@@ -179,7 +179,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        {/* <NavProjects projects={data.projects} /> */}
       </SidebarContent>
       <SidebarFooter>
         <NavSecondary items={data.navSecondary} className="mt-auto" />

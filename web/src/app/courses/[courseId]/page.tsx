@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer";
 import { SiteHeader } from "@/components/site-header";
 import CoursesCatalog from "@/components/courses-catalog";
 
-export default function Home() {
+export default function CoursePage() {
   return (
     <>
       <SiteHeader />
