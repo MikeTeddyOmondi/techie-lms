@@ -11,3 +11,7 @@ An Edtech platform providing seamless learning experience and quality education 
 3. Databases - MongoDB & Postgres
 4. Payment Gateway - IntaSend
 5. Asset storage - Cloudinary
+
+## Architecture 
+
+![ARCHITECTURE](./ARCHITECTURE.png)
