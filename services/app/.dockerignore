@@ -1,0 +1,9 @@
+/node_modules/
+/dist/
+
+Dockerfile
+.env.sample
+.dockerignore
+.gitignore
+Justfile
+compose.yaml

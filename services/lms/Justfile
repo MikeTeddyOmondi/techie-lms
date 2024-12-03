@@ -1,0 +1,45 @@
+# Default
+default:
+  just --list
+
+# Build Docker Image
+build-image:
+  docker build -t techie-lms-service:v1.0.0 . 
+
+# Create docker network
+create-net:
+  docker network create courses-platform
+  
+# Run Docker Container
+run-container:
+  docker run -d -p 8080:8080 --env-file .env --network courses-platform --restart always --name techie-lms-service techie-lms-service:v1.0.0  
+
+# Docker Container Logs
+log:
+  docker logs -f techie-lms-service
+
+# Dispose container  
+dispose-container:
+  docker stop techie-lms-service
+  docker rm techie-lms-service
+
+# Docker compose up (detached)
+compose:
+  docker compose up -d
+
+# Docker compose down
+compose-down:
+  docker compose down
+
+# Tear down container plus volumes
+tear-down:
+  docker compose down -v
+
+# Tag docker image
+tag:
+  docker tag techie-lms-service:v1.0.0 ranckosolutionsinc/techie-lms-service:v1.0.0
+
+# Push to Docker Hub
+push:
+  docker push ranckosolutionsinc/techie-lms-service:v1.0.0
+
